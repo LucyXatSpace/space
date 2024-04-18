@@ -476,7 +476,7 @@ alpha:true,   // so png background is transparent
   renderer.setClearColor(0x000000, 0);
 
   scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0x100000, 500, 850);
+  scene.fog = new THREE.Fog(0x000000, 500, 850);
 
   feathers = new THREE.Object3D()
   for (var i = 0; i < amount; i++) {
@@ -490,7 +490,7 @@ alpha:true,   // so png background is transparent
   camera.lookAt(center);
   scene.add(camera);
 
-  var light = new THREE.HemisphereLight(0xF5CC70, 0xF2676B, 1.5);
+  var light = new THREE.HemisphereLight(0xF0F0F0, 0xF2676B, 1.5);
   scene.add(light);
 
   window.addEventListener("resize", onWindowResize);
